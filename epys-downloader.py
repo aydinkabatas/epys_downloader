@@ -7,6 +7,10 @@ import math
 import pandas as pd
 import os, fnmatch
 
+# Login Info
+usernm = "USERNAME"
+passwd = "PASSWORD"
+
 # Find Desktop Path And Meter ID File
 desktop_path = os.path.expanduser("~/Desktop")
 main_file_path = desktop_path+'/scriptie4.xlsx'
@@ -28,12 +32,6 @@ def finder(pattern, path): # File Finder
                 result=os.path.join(root, name)
                 break
     return result
-
-# Login Info
-usernm = "USERNAME"
-passwd = "PASSWORD"
-
-
 
 # Login Page
 drv = webdriver.Chrome()
