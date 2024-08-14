@@ -15,9 +15,9 @@ Bu Python betiği EPYS sitesi üzerinden Sayaç ID listenizdeki sayaçları ilgi
 ## Kullanımı
 1. scriptie4.xlsx dosyasını masaüstüne kaydedin.
 2. scriptie4.xlsx dosyası içerisinde SAYAC_ID başlığındaki verileri silip sizdeki verileri girin.
-3. Python betiğini çalıştırın.
-4. Selenium içerisindeki Chrome ayarlarında "İndirmeden önce her dosyanın nereye kaydedileceğini sor" seçeneği aktifse pasife alın. *Opsiyonel.*
-5. usernm ve passwd alanlarını EPYS kullanıcı adı ve şifreniz ile doldurun.
+3. Betik içerisinde **usernm** ve **passwd** alanlarını EPYS kullanıcı adı ve şifreniz ile doldurun.
+4. Python betiğini çalıştırın.
+5. Selenium içerisindeki Chrome ayarlarında "İndirmeden önce her dosyanın nereye kaydedileceğini sor" seçeneği aktifse pasife alın. *Opsiyonel.*
 6. Gelecek olan mobil doğrulama (ya da e-mail doğrulama) kodunu 5 hane olarak authentication ekranına girin. *Not: Enter tuşuna basMAyın.*
 7. Tüm işlemleri otomatik olarak yapacak ve çıktıları yine scriptie4.xlsx dosyası içerisinde **HourlyPivot** sayfasında yan yana sırayalayacak.
 8. Bulamadığı Sayaç ID'ler ControlFile sayfasında indirme yapamadığı için "File Not Exists" hatası ile listelenecek.
@@ -30,7 +30,7 @@ Mümkün olduğu kadarı ile hata önleme kullanarak yapmaya çalıştım. Fakat
 4. Veri aralarında boşluk olmamasına özen gösterin.
 5. Bulamadığı ya da hatalı algıladığı veriyi zaten indirmeyeceği için listede göremeyeceksiniz. Listede 10'lu bir grubu görüyorsanız 10'u da hatalı anlamına gelmez. Hatalı olanı düzeltip yeniden deneme yaparsanız yine 10'lu veriyi indirebilirsiniz.
 6. Sabırlı olun, programın bitmesini bekleyin. Programı yarıda bırakmak Excel listenizi bozabilir, eksik veri gelmesini sağlayabilir. *Not: Program başarı ile biterse sonunda "Congratulations! Process complete without errors!" cevabı alırsınız.*
-7. EPYS tasarım yapısını değiştirirse vay halimize... Program XPATH üzerinden yazıldı. Bir çok şeyi kod bazında değiştirmek gerekebilir.
+7. EPYS tasarım yapısını değiştirirse vay halimize... Program XPATH üzerinden yazıldı. Bir çok şeyi kod bazında değiştirmek gerekebilir. Sektöre devam ettikçe burayı güncellerim, güncel repoyu kullanırsınız.
 
 ## Bug Report
 Pull Request oluşturun ya da aydin.kabatas[🥩]hotmail.com adresine mail gönderin.
