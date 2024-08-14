@@ -69,7 +69,10 @@ khan()
 # Set Variables
 meter_series = []
 meter_series = daf["SAYACID"].tolist()
+exact_count=0
 count_m = len(meter_series)
+if count_m%10==0:
+    exact_count=1
 part = 0
 counter = 0
 max_part = math.ceil(count_m/10)
@@ -77,7 +80,7 @@ max_part = math.ceil(count_m/10)
 # Start Loop For Meter Download
 for i in range(1, max_part+1): # EPYS System Only Take 10 Meter ID Every Query. We Have Divided All Meter ID's Into Parts.
 
-    if max_part==i:
+    if max_part==i and exact_count==0:
         add_loop=count_m%10
     else:
         add_loop=10
