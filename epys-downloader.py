@@ -155,13 +155,13 @@ for filename in daf["File Path"]:
     if filename != 'File Not Exists.': # Control For File Exists.
         hourly_wb = load_workbook(filename)
         hourly_sheet = hourly_wb.active
-        cell_value = hourly_sheet[f'C2'].value # Get Header For Every Counter ID
+        cell_value = hourly_sheet[f'C2'].value # Get Header For Every Meter ID
         new_sheet.cell(row=1, column=column, value=cell_value)
         for row in range(2, hourly_sheet.max_row+1): # Get Every Hourly Consumption. Side by side. 
             cell_value = float(hourly_sheet[f'G{row}'].value) * 1000 # Convert to MwH > KwH 
             new_sheet.cell(row=row, column=column, value=cell_value)
         hourly_wb.close()
-        column += 1  # Next Counter ID
+        column += 1  # Next Meter ID
 
 wb.save(main_file_path) # Save Same File
 
